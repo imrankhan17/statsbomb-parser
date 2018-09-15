@@ -1,0 +1,43 @@
+common:
+  - id
+  - index
+  - minute
+  - off_camera
+  - period
+  - play_pattern
+  - possession
+  - possession_team
+  - second
+  - team
+  - timestamp
+  - type
+
+shot:
+  - player
+  - position
+  - location
+  - duration
+  - under_pressure
+
+shot_objects:
+  - key_pass_id
+  - end_location
+  - follows_dribble
+  - first_time
+  - redirect
+  - one_on_one
+  - open_goal
+  - statsbomb_xg
+  - technique
+  - deflected
+  - body_part
+
+name_cols:
+  - body_part
+  - play_pattern
+  - player
+  - position
+  - possession_team
+  - team
+  - technique
+  - type
