@@ -1,3 +1,35 @@
+events:
+  - Shot
+  - Pass
+  - Ball Recovery
+  - Block
+  - Dribble
+  - Foul Committed
+  - Foul Won
+  - Goal Keeper
+  - Injury Stoppage
+  - Substitution
+  - Miscontrol
+  - Clearance
+  - Duel
+  - 50/50
+  - Ball Receipt
+  - Substitution
+  - Substitution
+  - Bad Behaviour
+
+name_cols:
+  - body_part
+  - play_pattern
+  - player
+  - position
+  - possession_team
+  - team
+  - technique
+  - type
+  - height
+  - recipient
+
 common:
   - id
   - index
@@ -13,10 +45,10 @@ common:
   - type
 
 shot:
+  - duration
+  - location
   - player
   - position
-  - location
-  - duration
   - under_pressure
 
 shot_objects:
@@ -32,12 +64,28 @@ shot_objects:
   - deflected
   - body_part
 
-name_cols:
-  - body_part
-  - play_pattern
+pass:
+  - duration
+  - location
   - player
   - position
-  - possession_team
-  - team
-  - technique
+  - under_pressure
+
+pass_objects:
+  - recipient
+  - length
+  - angle
+  - height
+  - end_location
+  - assisted_shot_id
+  - pass_backheel
+  - deflected
+  - miscommunication
+  - through_ball
+  - cross
+  - cut_back
+  - switch
+  - shot_assist
+  - goal_assist
+  - body_part
   - type
