@@ -28,10 +28,21 @@ class Events:
         assert event_type.title() in columns['events'], '`{}` is not a valid event type'.format(event_type)
 
         all_events = [i for i in self.data if i['type']['name'] == event_type.title()]
-        events = [{key: ev.get(key, None) for key in columns['common'] + columns[event_type]} for ev in all_events]
-        event_objects = [{key: ev[event_type].get(key, None) for key in columns['{}_objects'.format(event_type)]}
-                         for ev in all_events]
-        final = [{**i, **j} for i, j in zip(events, event_objects)]
+        assert len(all_events) > 0, 'Found 0 events for `{}`'.format(event_type)
+
+        common_elements = [{key: event.get(key, None) for key in columns['common']} for event in all_events]
+
+        event_objects = []
+        for event in all_events:
+            object_dict = {}
+            for key in columns[event_type]:
+                try:
+                    object_dict[key] = event[event_type.replace(' ', '_')].get(key, None)
+                except KeyError:
+                    object_dict[key] = None
+            event_objects.append(object_dict)
+
+        final = [{**i, **j} for i, j in zip(common_elements, event_objects)]
 
         df = pd.DataFrame(final)
 
@@ -41,7 +52,10 @@ class Events:
             except KeyError:
                 pass
 
-        df[['start_location_x', 'start_location_y']] = df['location'].apply(pd.Series)
+        try:
+            df[['start_location_x', 'start_location_y']] = df['location'].apply(pd.Series)
+        except ValueError:
+            pass
         df = df.drop('location', axis=1)
 
         if 'end_location' in df.columns:

@@ -13,10 +13,11 @@ events:
   - Clearance
   - Duel
   - 50/50
-  - Ball Receipt
+  - Ball Receipt*
   - Substitution
   - Substitution
   - Bad Behaviour
+  - Interception
 
 name_cols:
   - body_part
@@ -29,6 +30,8 @@ name_cols:
   - type
   - height
   - recipient
+  - outcome
+  - card
 
 common:
   - id
@@ -43,15 +46,13 @@ common:
   - team
   - timestamp
   - type
-
-shot:
   - duration
   - location
   - player
   - position
   - under_pressure
 
-shot_objects:
+shot:
   - key_pass_id
   - end_location
   - follows_dribble
@@ -63,15 +64,9 @@ shot_objects:
   - technique
   - deflected
   - body_part
+  - outcome
 
 pass:
-  - duration
-  - location
-  - player
-  - position
-  - under_pressure
-
-pass_objects:
   - recipient
   - length
   - angle
@@ -89,3 +84,68 @@ pass_objects:
   - goal_assist
   - body_part
   - type
+  - outcome
+
+ball recovery:
+  - offensive
+  - recovery_failure
+
+block:
+  - deflection
+  - offensive
+  - save_block
+  - out
+  - outcome
+
+dribble:
+  - overrun
+  - nutmeg
+  - outcome
+
+foul committed:
+  - offensive
+  - type
+  - advantage
+  - penalty
+  - card
+
+foul won:
+  - defensive
+  - advantage
+  - penalty
+
+goal keeper:
+  - position
+  - outcome
+  - technique
+  - body_part
+  - type
+
+injury stoppage:
+  - in_chain
+
+substitution:
+  - replacement
+  - outcome
+
+miscontrol:
+  - aerial_won
+
+clearance:
+  - aerial_won
+
+duel:
+  - type
+  - outcome
+
+50/50:
+  - outcome
+
+ball receipt*:
+  - outcome
+
+interception:
+  - outcome
+
+bad behaviour:
+  - card
