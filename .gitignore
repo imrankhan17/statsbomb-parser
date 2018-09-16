@@ -2,6 +2,9 @@
 *.pyc
 __pycache__/
 
+# pytest
+.pytest_cache/
+
 # Jupyter notebooks
 notebooks/
 *.ipynb

@@ -147,3 +147,9 @@ interception:
 
 bad behaviour:
   - card
+
+matches_name_cols:
+  - away_team
+  - home_team
+  - competition
+  - season

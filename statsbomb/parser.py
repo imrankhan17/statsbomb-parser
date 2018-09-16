@@ -1,27 +1,28 @@
-import json
 import pandas as pd
 
+from statsbomb.base import BaseParser
 from statsbomb.utils import columns, get_event_name
 
 
-class Events:
+class Competitions(BaseParser):
+    def get_dataframe(self) -> pd.DataFrame:
+        return pd.DataFrame(self.data)
+
+
+class Matches(BaseParser):
+    def get_dataframe(self) -> pd.DataFrame:
+
+        df = pd.DataFrame(self.data)
+        for col in columns['matches_name_cols']:
+            df[col] = df[col].apply(pd.Series)
+
+        return df
+
+
+class Events(BaseParser):
     """
     Parses json data into tabular format for a particular event.
     """
-
-    def __init__(self, file_path: str):
-        self.file_path = file_path
-        self.data = json.load(open(self.file_path))
-        self.match_id = self.file_path.split('/')[-1].split('.json')[0]
-
-    def __repr__(self):
-        return 'Events for match ID {}'.format(self.match_id)
-
-    def __str__(self):
-        return self.__repr__()
-
-    def __len__(self):
-        return len(self.data)
 
     def get_dataframe(self, event_type: str) -> pd.DataFrame:
 
