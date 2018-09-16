@@ -14,10 +14,8 @@ events:
   - Duel
   - 50/50
   - Ball Receipt*
-  - Substitution
-  - Substitution
-  - Bad Behaviour
   - Interception
+  - Bad Behaviour
 
 name_cols:
   - body_part
@@ -36,35 +34,35 @@ name_cols:
 common:
   - id
   - index
-  - minute
-  - off_camera
   - period
-  - play_pattern
+  - timestamp
+  - minute
+  - second
   - possession
   - possession_team
-  - second
+  - play_pattern
+  - off_camera
   - team
-  - timestamp
-  - type
-  - duration
-  - location
   - player
   - position
+  - location
+  - duration
   - under_pressure
 
 shot:
-  - key_pass_id
+  - statsbomb_xg
   - end_location
-  - follows_dribble
+  - key_pass_id
+  - body_part
+  - type
+  - outcome
+  - technique
   - first_time
+  - follows_dribble
   - redirect
   - one_on_one
   - open_goal
-  - statsbomb_xg
-  - technique
   - deflected
-  - body_part
-  - outcome
 
 pass:
   - recipient
@@ -72,6 +70,9 @@ pass:
   - angle
   - height
   - end_location
+  - outcome
+  - type
+  - body_part
   - assisted_shot_id
   - pass_backheel
   - deflected
@@ -82,32 +83,29 @@ pass:
   - switch
   - shot_assist
   - goal_assist
-  - body_part
-  - type
-  - outcome
 
 ball recovery:
   - offensive
   - recovery_failure
 
 block:
+  - outcome
   - deflection
   - offensive
   - save_block
   - out
-  - outcome
 
 dribble:
+  - outcome
   - overrun
   - nutmeg
-  - outcome
 
 foul committed:
-  - offensive
   - type
+  - offensive
   - advantage
-  - penalty
   - card
+  - penalty
 
 foul won:
   - defensive
@@ -115,11 +113,11 @@ foul won:
   - penalty
 
 goal keeper:
-  - position
-  - outcome
-  - technique
-  - body_part
   - type
+  - outcome
+  - position
+  - body_part
+  - technique
 
 injury stoppage:
   - in_chain
