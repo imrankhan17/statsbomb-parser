@@ -1,1 +1,1 @@
-from statsbomb.parser import Competitions, Matches, Events
+from statsbomb.parser import Competitions, Matches, Lineups, Events

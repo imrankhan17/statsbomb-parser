@@ -19,6 +19,21 @@ class Matches(BaseParser):
         return df
 
 
+class Lineups(BaseParser):
+    def get_dataframe(self) -> pd.DataFrame:
+
+        df = pd.DataFrame()
+        for team in self.data:
+            lineup = pd.DataFrame(team['lineup'])
+            lineup['team_id'] = team['team_id']
+            lineup['team_name'] = team['team_name']
+            df = df.append(lineup).reset_index(drop=True)
+
+        df['country'] = df['country'].apply(get_event_name)
+
+        return df
+
+
 class Events(BaseParser):
     """
     Parses json data into tabular format for a particular event.
