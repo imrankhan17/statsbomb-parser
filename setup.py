@@ -12,14 +12,15 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name='statsbomb',
-    version='0.1.2',
+    version='0.1.4',
     author='Imran Khan',
     author_email='imrankhan17@hotmail.co.uk',
     description='A Python package to parse StatsBomb JSON data to CSV',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/imrankhan17/statsbomb-parser',
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=['tests']),
+    include_package_data=True,
     license='MIT',
     install_requires=packages,
     classifiers=(
