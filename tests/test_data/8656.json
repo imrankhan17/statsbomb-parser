@@ -1,0 +1,1471 @@
+[
+    {
+  "id" : "6ebb5b87-c8e6-4483-9b65-3dca81607570",
+  "index" : 1,
+  "period" : 1,
+  "timestamp" : "00:00:00.000",
+  "minute" : 0,
+  "second" : 0,
+  "type" : {
+    "id" : 35,
+    "name" : "Starting XI"
+  },
+  "possession" : 1,
+  "possession_team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "play_pattern" : {
+    "id" : 1,
+    "name" : "Regular Play"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "duration" : 0.0,
+  "tactics" : {
+    "formation" : 4141,
+    "lineup" : [ {
+      "player" : {
+        "id" : 3444,
+        "name" : "Danijel Subasic"
+      },
+      "position" : {
+        "id" : 1,
+        "name" : "Goalkeeper"
+      },
+      "jersey_number" : 23
+    }, {
+      "player" : {
+        "id" : 5461,
+        "name" : "Sime Vrsaljko"
+      },
+      "position" : {
+        "id" : 2,
+        "name" : "Right Back"
+      },
+      "jersey_number" : 2
+    }, {
+      "player" : {
+        "id" : 3471,
+        "name" : "Dejan Lovren"
+      },
+      "position" : {
+        "id" : 3,
+        "name" : "Right Center Back"
+      },
+      "jersey_number" : 6
+    }, {
+      "player" : {
+        "id" : 5468,
+        "name" : "Domagoj Vida"
+      },
+      "position" : {
+        "id" : 5,
+        "name" : "Left Center Back"
+      },
+      "jersey_number" : 21
+    }, {
+      "player" : {
+        "id" : 5457,
+        "name" : "Ivan Strinic"
+      },
+      "position" : {
+        "id" : 6,
+        "name" : "Left Back"
+      },
+      "jersey_number" : 3
+    }, {
+      "player" : {
+        "id" : 5469,
+        "name" : "Marcelo Brozovic"
+      },
+      "position" : {
+        "id" : 14,
+        "name" : "Center Midfield"
+      },
+      "jersey_number" : 11
+    }, {
+      "player" : {
+        "id" : 5465,
+        "name" : "Ante Rebic"
+      },
+      "position" : {
+        "id" : 17,
+        "name" : "Right Wing"
+      },
+      "jersey_number" : 18
+    }, {
+      "player" : {
+        "id" : 5463,
+        "name" : "Luka Modric"
+      },
+      "position" : {
+        "id" : 18,
+        "name" : "Right Attacking Midfield"
+      },
+      "jersey_number" : 10
+    }, {
+      "player" : {
+        "id" : 5470,
+        "name" : "Ivan Rakitic"
+      },
+      "position" : {
+        "id" : 20,
+        "name" : "Left Attacking Midfield"
+      },
+      "jersey_number" : 7
+    }, {
+      "player" : {
+        "id" : 5474,
+        "name" : "Ivan Perisic"
+      },
+      "position" : {
+        "id" : 21,
+        "name" : "Left Wing"
+      },
+      "jersey_number" : 4
+    }, {
+      "player" : {
+        "id" : 5472,
+        "name" : "Mario Mandzukic"
+      },
+      "position" : {
+        "id" : 23,
+        "name" : "Center Forward"
+      },
+      "jersey_number" : 17
+    } ]
+  }
+},
+    {
+  "id" : "2f530678-bcf1-4069-a878-9935c766bce4",
+  "index" : 2,
+  "period" : 1,
+  "timestamp" : "00:00:00.000",
+  "minute" : 0,
+  "second" : 0,
+  "type" : {
+    "id" : 35,
+    "name" : "Starting XI"
+  },
+  "possession" : 1,
+  "possession_team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "play_pattern" : {
+    "id" : 1,
+    "name" : "Regular Play"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "duration" : 0.0,
+  "tactics" : {
+    "formation" : 352,
+    "lineup" : [ {
+      "player" : {
+        "id" : 3468,
+        "name" : "Jordan Pickford"
+      },
+      "position" : {
+        "id" : 1,
+        "name" : "Goalkeeper"
+      },
+      "jersey_number" : 1
+    }, {
+      "player" : {
+        "id" : 3205,
+        "name" : "Kyle Walker"
+      },
+      "position" : {
+        "id" : 3,
+        "name" : "Right Center Back"
+      },
+      "jersey_number" : 2
+    }, {
+      "player" : {
+        "id" : 3244,
+        "name" : "John Stones"
+      },
+      "position" : {
+        "id" : 4,
+        "name" : "Center Back"
+      },
+      "jersey_number" : 5
+    }, {
+      "player" : {
+        "id" : 3336,
+        "name" : "Harry Maguire"
+      },
+      "position" : {
+        "id" : 5,
+        "name" : "Left Center Back"
+      },
+      "jersey_number" : 6
+    }, {
+      "player" : {
+        "id" : 3308,
+        "name" : "Kieran Trippier"
+      },
+      "position" : {
+        "id" : 7,
+        "name" : "Right Wing Back"
+      },
+      "jersey_number" : 12
+    }, {
+      "player" : {
+        "id" : 3612,
+        "name" : "Ashley Young"
+      },
+      "position" : {
+        "id" : 8,
+        "name" : "Left Wing Back"
+      },
+      "jersey_number" : 18
+    }, {
+      "player" : {
+        "id" : 3532,
+        "name" : "Jordan Henderson"
+      },
+      "position" : {
+        "id" : 10,
+        "name" : "Center Defensive Midfield"
+      },
+      "jersey_number" : 8
+    }, {
+      "player" : {
+        "id" : 3293,
+        "name" : "Jesse Lingard"
+      },
+      "position" : {
+        "id" : 13,
+        "name" : "Right Center Midfield"
+      },
+      "jersey_number" : 7
+    }, {
+      "player" : {
+        "id" : 3094,
+        "name" : "Dele Alli"
+      },
+      "position" : {
+        "id" : 15,
+        "name" : "Left Center Midfield"
+      },
+      "jersey_number" : 20
+    }, {
+      "player" : {
+        "id" : 3060,
+        "name" : "Harry Kane"
+      },
+      "position" : {
+        "id" : 22,
+        "name" : "Right Center Forward"
+      },
+      "jersey_number" : 9
+    }, {
+      "player" : {
+        "id" : 3233,
+        "name" : "Raheem Sterling"
+      },
+      "position" : {
+        "id" : 24,
+        "name" : "Left Center Forward"
+      },
+      "jersey_number" : 10
+    } ]
+  }
+},
+    {
+  "id" : "7073090c-32a8-4a8c-8a25-b7ca512bca1a",
+  "index" : 3,
+  "period" : 1,
+  "timestamp" : "00:00:00.000",
+  "minute" : 0,
+  "second" : 0,
+  "type" : {
+    "id" : 18,
+    "name" : "Half Start"
+  },
+  "possession" : 1,
+  "possession_team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "play_pattern" : {
+    "id" : 1,
+    "name" : "Regular Play"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "duration" : 8.88,
+  "related_events" : [ "316f155d-b042-48f7-98a0-df4f10ddc82a" ]
+},
+    {
+  "id" : "316f155d-b042-48f7-98a0-df4f10ddc82a",
+  "index" : 4,
+  "period" : 1,
+  "timestamp" : "00:00:00.000",
+  "minute" : 0,
+  "second" : 0,
+  "type" : {
+    "id" : 18,
+    "name" : "Half Start"
+  },
+  "possession" : 1,
+  "possession_team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "play_pattern" : {
+    "id" : 1,
+    "name" : "Regular Play"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "duration" : 8.413,
+  "related_events" : [ "7073090c-32a8-4a8c-8a25-b7ca512bca1a" ]
+},
+    {
+  "id" : "0160a53e-9ed5-48ff-adfe-be306d551b4a",
+  "index" : 95,
+  "period" : 1,
+  "timestamp" : "00:04:46.900",
+  "minute" : 4,
+  "second" : 46,
+  "type" : {
+    "id" : 16,
+    "name" : "Shot"
+  },
+  "possession" : 10,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 3,
+    "name" : "From Free Kick"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3308,
+    "name" : "Kieran Trippier"
+  },
+  "position" : {
+    "id" : 7,
+    "name" : "Right Wing Back"
+  },
+  "location" : [ 96.0, 43.0 ],
+  "duration" : 1.013,
+  "related_events" : [ "6c470121-ce8a-4dee-a374-3da51aacd2fd" ],
+  "shot" : {
+    "statsbomb_xg" : 0.08887702,
+    "end_location" : [ 120.0, 43.1, 2.1 ],
+    "type" : {
+      "id" : 62,
+      "name" : "Free Kick"
+    },
+    "outcome" : {
+      "id" : 97,
+      "name" : "Goal"
+    },
+    "body_part" : {
+      "id" : 40,
+      "name" : "Right Foot"
+    },
+    "technique" : {
+      "id" : 93,
+      "name" : "Normal"
+    },
+    "freeze_frame" : [ {
+      "location" : [ 94.0, 37.0 ],
+      "player" : {
+        "id" : 3612,
+        "name" : "Ashley Young"
+      },
+      "position" : {
+        "id" : 8,
+        "name" : "Left Wing Back"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 120.0, 41.0 ],
+      "player" : {
+        "id" : 3444,
+        "name" : "Danijel Subasic"
+      },
+      "position" : {
+        "id" : 1,
+        "name" : "Goalkeeper"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 108.0, 34.0 ],
+      "player" : {
+        "id" : 3233,
+        "name" : "Raheem Sterling"
+      },
+      "position" : {
+        "id" : 24,
+        "name" : "Left Center Forward"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 108.0, 35.0 ],
+      "player" : {
+        "id" : 5461,
+        "name" : "Sime Vrsaljko"
+      },
+      "position" : {
+        "id" : 2,
+        "name" : "Right Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 109.0, 37.0 ],
+      "player" : {
+        "id" : 5469,
+        "name" : "Marcelo Brozovic"
+      },
+      "position" : {
+        "id" : 14,
+        "name" : "Center Midfield"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 109.0, 38.0 ],
+      "player" : {
+        "id" : 5468,
+        "name" : "Domagoj Vida"
+      },
+      "position" : {
+        "id" : 5,
+        "name" : "Left Center Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 109.0, 39.0 ],
+      "player" : {
+        "id" : 3293,
+        "name" : "Jesse Lingard"
+      },
+      "position" : {
+        "id" : 13,
+        "name" : "Right Center Midfield"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 109.0, 40.0 ],
+      "player" : {
+        "id" : 3336,
+        "name" : "Harry Maguire"
+      },
+      "position" : {
+        "id" : 5,
+        "name" : "Left Center Back"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 108.0, 40.0 ],
+      "player" : {
+        "id" : 5463,
+        "name" : "Luka Modric"
+      },
+      "position" : {
+        "id" : 18,
+        "name" : "Right Attacking Midfield"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 108.0, 42.0 ],
+      "player" : {
+        "id" : 5465,
+        "name" : "Ante Rebic"
+      },
+      "position" : {
+        "id" : 17,
+        "name" : "Right Wing"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 108.0, 43.0 ],
+      "player" : {
+        "id" : 5472,
+        "name" : "Mario Mandzukic"
+      },
+      "position" : {
+        "id" : 23,
+        "name" : "Center Forward"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 108.0, 44.0 ],
+      "player" : {
+        "id" : 3471,
+        "name" : "Dejan Lovren"
+      },
+      "position" : {
+        "id" : 3,
+        "name" : "Right Center Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 108.0, 45.0 ],
+      "player" : {
+        "id" : 5470,
+        "name" : "Ivan Rakitic"
+      },
+      "position" : {
+        "id" : 20,
+        "name" : "Left Attacking Midfield"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 108.0, 46.0 ],
+      "player" : {
+        "id" : 3532,
+        "name" : "Jordan Henderson"
+      },
+      "position" : {
+        "id" : 10,
+        "name" : "Center Defensive Midfield"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 108.0, 47.0 ],
+      "player" : {
+        "id" : 3094,
+        "name" : "Dele Alli"
+      },
+      "position" : {
+        "id" : 15,
+        "name" : "Left Center Midfield"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 108.0, 51.0 ],
+      "player" : {
+        "id" : 5457,
+        "name" : "Ivan Strinic"
+      },
+      "position" : {
+        "id" : 6,
+        "name" : "Left Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 108.0, 53.0 ],
+      "player" : {
+        "id" : 3060,
+        "name" : "Harry Kane"
+      },
+      "position" : {
+        "id" : 22,
+        "name" : "Right Center Forward"
+      },
+      "teammate" : true
+    } ]
+  }
+},
+    {
+  "id" : "6c470121-ce8a-4dee-a374-3da51aacd2fd",
+  "index" : 96,
+  "period" : 1,
+  "timestamp" : "00:04:47.913",
+  "minute" : 4,
+  "second" : 47,
+  "type" : {
+    "id" : 23,
+    "name" : "Goal Keeper"
+  },
+  "possession" : 10,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 3,
+    "name" : "From Free Kick"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "player" : {
+    "id" : 3444,
+    "name" : "Danijel Subasic"
+  },
+  "position" : {
+    "id" : 1,
+    "name" : "Goalkeeper"
+  },
+  "location" : [ 1.0, 40.0 ],
+  "related_events" : [ "0160a53e-9ed5-48ff-adfe-be306d551b4a" ],
+  "goalkeeper" : {
+    "type" : {
+      "id" : 26,
+      "name" : "Goal Conceded"
+    },
+    "outcome" : {
+      "id" : 55,
+      "name" : "No Touch"
+    },
+    "position" : {
+      "id" : 44,
+      "name" : "Set"
+    }
+  }
+},
+    {
+  "id" : "48e28801-8408-4b74-806a-5f1e40224cce",
+  "index" : 307,
+  "period" : 1,
+  "timestamp" : "00:13:41.780",
+  "minute" : 13,
+  "second" : 41,
+  "type" : {
+    "id" : 16,
+    "name" : "Shot"
+  },
+  "possession" : 27,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 2,
+    "name" : "From Corner"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3336,
+    "name" : "Harry Maguire"
+  },
+  "position" : {
+    "id" : 5,
+    "name" : "Left Center Back"
+  },
+  "location" : [ 111.0, 37.0 ],
+  "duration" : 1.453,
+  "related_events" : [ "0ec7c5d9-f6f4-450d-b166-5f6cfe1a9e82", "8e1abdc5-a93e-428a-a0d9-ca793fb76bb6" ],
+  "shot" : {
+    "statsbomb_xg" : 0.013174075,
+    "end_location" : [ 120.0, 45.1, 0.3 ],
+    "key_pass_id" : "d492f17b-6dd5-45d1-aa51-ce32436a57a3",
+    "technique" : {
+      "id" : 93,
+      "name" : "Normal"
+    },
+    "type" : {
+      "id" : 87,
+      "name" : "Open Play"
+    },
+    "outcome" : {
+      "id" : 98,
+      "name" : "Off T"
+    },
+    "body_part" : {
+      "id" : 37,
+      "name" : "Head"
+    },
+    "aerial_won" : true,
+    "freeze_frame" : [ {
+      "location" : [ 115.0, 36.0 ],
+      "player" : {
+        "id" : 3094,
+        "name" : "Dele Alli"
+      },
+      "position" : {
+        "id" : 15,
+        "name" : "Left Center Midfield"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 112.0, 36.0 ],
+      "player" : {
+        "id" : 5468,
+        "name" : "Domagoj Vida"
+      },
+      "position" : {
+        "id" : 5,
+        "name" : "Left Center Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 109.0, 44.0 ],
+      "player" : {
+        "id" : 5470,
+        "name" : "Ivan Rakitic"
+      },
+      "position" : {
+        "id" : 20,
+        "name" : "Left Attacking Midfield"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 120.0, 41.0 ],
+      "player" : {
+        "id" : 3444,
+        "name" : "Danijel Subasic"
+      },
+      "position" : {
+        "id" : 1,
+        "name" : "Goalkeeper"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 118.0, 43.0 ],
+      "player" : {
+        "id" : 5465,
+        "name" : "Ante Rebic"
+      },
+      "position" : {
+        "id" : 17,
+        "name" : "Right Wing"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 116.0, 43.0 ],
+      "player" : {
+        "id" : 3233,
+        "name" : "Raheem Sterling"
+      },
+      "position" : {
+        "id" : 24,
+        "name" : "Left Center Forward"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 116.0, 49.0 ],
+      "player" : {
+        "id" : 5457,
+        "name" : "Ivan Strinic"
+      },
+      "position" : {
+        "id" : 6,
+        "name" : "Left Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 119.0, 38.0 ],
+      "player" : {
+        "id" : 5461,
+        "name" : "Sime Vrsaljko"
+      },
+      "position" : {
+        "id" : 2,
+        "name" : "Right Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 111.0, 39.0 ],
+      "player" : {
+        "id" : 5469,
+        "name" : "Marcelo Brozovic"
+      },
+      "position" : {
+        "id" : 14,
+        "name" : "Center Midfield"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 113.0, 38.0 ],
+      "player" : {
+        "id" : 3471,
+        "name" : "Dejan Lovren"
+      },
+      "position" : {
+        "id" : 3,
+        "name" : "Right Center Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 113.0, 40.0 ],
+      "player" : {
+        "id" : 3060,
+        "name" : "Harry Kane"
+      },
+      "position" : {
+        "id" : 22,
+        "name" : "Right Center Forward"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 112.0, 41.0 ],
+      "player" : {
+        "id" : 5472,
+        "name" : "Mario Mandzukic"
+      },
+      "position" : {
+        "id" : 23,
+        "name" : "Center Forward"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 114.0, 49.0 ],
+      "player" : {
+        "id" : 5474,
+        "name" : "Ivan Perisic"
+      },
+      "position" : {
+        "id" : 21,
+        "name" : "Left Wing"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 118.0, 51.0 ],
+      "player" : {
+        "id" : 3532,
+        "name" : "Jordan Henderson"
+      },
+      "position" : {
+        "id" : 10,
+        "name" : "Center Defensive Midfield"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 115.0, 47.0 ],
+      "player" : {
+        "id" : 3244,
+        "name" : "John Stones"
+      },
+      "position" : {
+        "id" : 4,
+        "name" : "Center Back"
+      },
+      "teammate" : true
+    } ]
+  }
+},
+    {
+  "id" : "f25a693f-81cd-41ec-a57f-957da6eb7626",
+  "index" : 436,
+  "period" : 1,
+  "timestamp" : "00:18:18.313",
+  "minute" : 18,
+  "second" : 18,
+  "type" : {
+    "id" : 16,
+    "name" : "Shot"
+  },
+  "possession" : 37,
+  "possession_team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "play_pattern" : {
+    "id" : 4,
+    "name" : "From Throw In"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "player" : {
+    "id" : 5474,
+    "name" : "Ivan Perisic"
+  },
+  "position" : {
+    "id" : 21,
+    "name" : "Left Wing"
+  },
+  "location" : [ 94.0, 20.0 ],
+  "duration" : 1.067,
+  "related_events" : [ "23856950-233c-42f7-822e-a5e31ed25f7c" ],
+  "shot" : {
+    "statsbomb_xg" : 0.03211567,
+    "end_location" : [ 120.0, 34.9, 0.5 ],
+    "key_pass_id" : "f695d356-f55d-4eb5-9069-8a8e157eef53",
+    "type" : {
+      "id" : 87,
+      "name" : "Open Play"
+    },
+    "deflected" : true,
+    "outcome" : {
+      "id" : 98,
+      "name" : "Off T"
+    },
+    "body_part" : {
+      "id" : 40,
+      "name" : "Right Foot"
+    },
+    "technique" : {
+      "id" : 93,
+      "name" : "Normal"
+    },
+    "freeze_frame" : [ {
+      "location" : [ 87.0, 22.0 ],
+      "player" : {
+        "id" : 5470,
+        "name" : "Ivan Rakitic"
+      },
+      "position" : {
+        "id" : 20,
+        "name" : "Left Attacking Midfield"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 87.0, 45.0 ],
+      "player" : {
+        "id" : 5463,
+        "name" : "Luka Modric"
+      },
+      "position" : {
+        "id" : 18,
+        "name" : "Right Attacking Midfield"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 94.0, 47.0 ],
+      "player" : {
+        "id" : 3094,
+        "name" : "Dele Alli"
+      },
+      "position" : {
+        "id" : 15,
+        "name" : "Left Center Midfield"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 96.0, 38.0 ],
+      "player" : {
+        "id" : 3532,
+        "name" : "Jordan Henderson"
+      },
+      "position" : {
+        "id" : 10,
+        "name" : "Center Defensive Midfield"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 104.0, 28.0 ],
+      "player" : {
+        "id" : 3205,
+        "name" : "Kyle Walker"
+      },
+      "position" : {
+        "id" : 3,
+        "name" : "Right Center Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 95.0, 26.0 ],
+      "player" : {
+        "id" : 3293,
+        "name" : "Jesse Lingard"
+      },
+      "position" : {
+        "id" : 13,
+        "name" : "Right Center Midfield"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 100.0, 21.0 ],
+      "player" : {
+        "id" : 3308,
+        "name" : "Kieran Trippier"
+      },
+      "position" : {
+        "id" : 7,
+        "name" : "Right Wing Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 98.0, 15.0 ],
+      "player" : {
+        "id" : 5457,
+        "name" : "Ivan Strinic"
+      },
+      "position" : {
+        "id" : 6,
+        "name" : "Left Back"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 95.0, 59.0 ],
+      "player" : {
+        "id" : 5461,
+        "name" : "Sime Vrsaljko"
+      },
+      "position" : {
+        "id" : 2,
+        "name" : "Right Back"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 110.0, 38.0 ],
+      "player" : {
+        "id" : 5472,
+        "name" : "Mario Mandzukic"
+      },
+      "position" : {
+        "id" : 23,
+        "name" : "Center Forward"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 111.0, 39.0 ],
+      "player" : {
+        "id" : 5465,
+        "name" : "Ante Rebic"
+      },
+      "position" : {
+        "id" : 17,
+        "name" : "Right Wing"
+      },
+      "teammate" : true
+    }, {
+      "location" : [ 110.0, 37.0 ],
+      "player" : {
+        "id" : 3244,
+        "name" : "John Stones"
+      },
+      "position" : {
+        "id" : 4,
+        "name" : "Center Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 110.0, 40.0 ],
+      "player" : {
+        "id" : 3336,
+        "name" : "Harry Maguire"
+      },
+      "position" : {
+        "id" : 5,
+        "name" : "Left Center Back"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 118.0, 38.0 ],
+      "player" : {
+        "id" : 3468,
+        "name" : "Jordan Pickford"
+      },
+      "position" : {
+        "id" : 1,
+        "name" : "Goalkeeper"
+      },
+      "teammate" : false
+    }, {
+      "location" : [ 107.0, 55.0 ],
+      "player" : {
+        "id" : 3612,
+        "name" : "Ashley Young"
+      },
+      "position" : {
+        "id" : 8,
+        "name" : "Left Wing Back"
+      },
+      "teammate" : false
+    } ]
+  }
+},
+    {
+  "id" : "7e92f6b8-48e8-4616-9997-de689e48e4fd",
+  "index" : 439,
+  "period" : 1,
+  "timestamp" : "00:18:59.780",
+  "minute" : 18,
+  "second" : 59,
+  "type" : {
+    "id" : 30,
+    "name" : "Pass"
+  },
+  "possession" : 38,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 4,
+    "name" : "From Throw In"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3612,
+    "name" : "Ashley Young"
+  },
+  "position" : {
+    "id" : 8,
+    "name" : "Left Wing Back"
+  },
+  "location" : [ 55.0, 1.0 ],
+  "duration" : 3.56,
+  "related_events" : [ "3fe86d2c-f538-427e-9b71-1520d29fe6db" ],
+  "pass" : {
+    "recipient" : {
+      "id" : 3336,
+      "name" : "Harry Maguire"
+    },
+    "length" : 38.078865,
+    "angle" : 2.7367008,
+    "height" : {
+      "id" : 3,
+      "name" : "High Pass"
+    },
+    "end_location" : [ 20.0, 16.0 ],
+    "type" : {
+      "id" : 67,
+      "name" : "Throw-in"
+    }
+  }
+},
+    {
+  "id" : "0a7f0193-8257-40f3-b19b-2b046c5a08bc",
+  "index" : 450,
+  "period" : 1,
+  "timestamp" : "00:19:11.860",
+  "minute" : 19,
+  "second" : 11,
+  "type" : {
+    "id" : 30,
+    "name" : "Pass"
+  },
+  "possession" : 38,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 4,
+    "name" : "From Throw In"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3308,
+    "name" : "Kieran Trippier"
+  },
+  "position" : {
+    "id" : 7,
+    "name" : "Right Wing Back"
+  },
+  "location" : [ 74.0, 78.0 ],
+  "duration" : 3.973,
+  "related_events" : [ "474cda3f-29d7-4994-86d7-d174192c28ed", "8a58c95b-d7c1-48f3-973c-c97311b88051" ],
+  "pass" : {
+    "recipient" : {
+      "id" : 3233,
+      "name" : "Raheem Sterling"
+    },
+    "length" : 32.38827,
+    "angle" : -0.15499674,
+    "height" : {
+      "id" : 3,
+      "name" : "High Pass"
+    },
+    "end_location" : [ 106.0, 73.0 ],
+    "outcome" : {
+      "id" : 9,
+      "name" : "Incomplete"
+    },
+    "body_part" : {
+      "id" : 38,
+      "name" : "Left Foot"
+    }
+  }
+},
+    {
+  "id" : "510783ec-ea0e-4674-8e78-82e2147507a2",
+  "index" : 3057,
+  "period" : 4,
+  "timestamp" : "00:03:01.550",
+  "minute" : 108,
+  "second" : 1,
+  "type" : {
+    "id" : 30,
+    "name" : "Pass"
+  },
+  "possession" : 229,
+  "possession_team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "play_pattern" : {
+    "id" : 4,
+    "name" : "From Throw In"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "player" : {
+    "id" : 5474,
+    "name" : "Ivan Perisic"
+  },
+  "position" : {
+    "id" : 21,
+    "name" : "Left Wing"
+  },
+  "location" : [ 103.0, 20.0 ],
+  "duration" : 2.08,
+  "related_events" : [ "906d02b4-467f-4f21-920d-2482a16cdcf9" ],
+  "pass" : {
+    "recipient" : {
+      "id" : 5472,
+      "name" : "Mario Mandzukic"
+    },
+    "length" : 15.556349,
+    "angle" : 0.7853982,
+    "height" : {
+      "id" : 3,
+      "name" : "High Pass"
+    },
+    "end_location" : [ 114.0, 31.0 ],
+    "assisted_shot_id" : "5a2e748a-46e8-4f7e-936a-1beae50b693d",
+    "goal_assist" : true,
+    "type" : {
+      "id" : 66,
+      "name" : "Recovery"
+    },
+    "body_part" : {
+      "id" : 37,
+      "name" : "Head"
+    }
+  }
+},
+    {
+  "id" : "7cfa57b4-9003-462a-b11a-5979f95639ac",
+  "index" : 3170,
+  "period" : 4,
+  "timestamp" : "00:10:59.150",
+  "minute" : 115,
+  "second" : 59,
+  "type" : {
+    "id" : 30,
+    "name" : "Pass"
+  },
+  "possession" : 239,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 3,
+    "name" : "From Free Kick"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3468,
+    "name" : "Jordan Pickford"
+  },
+  "position" : {
+    "id" : 1,
+    "name" : "Goalkeeper"
+  },
+  "location" : [ 14.0, 38.0 ],
+  "duration" : 3.48,
+  "related_events" : [ "25d93d5e-7e7c-4ca1-8132-f386f7882050", "c3cc3961-9cd3-452e-b751-cd454f6bc2e3" ],
+  "pass" : {
+    "recipient" : {
+      "id" : 3060,
+      "name" : "Harry Kane"
+    },
+    "length" : 71.063354,
+    "angle" : -0.0422284,
+    "height" : {
+      "id" : 3,
+      "name" : "High Pass"
+    },
+    "end_location" : [ 85.0, 35.0 ],
+    "type" : {
+      "id" : 62,
+      "name" : "Free Kick"
+    },
+    "outcome" : {
+      "id" : 9,
+      "name" : "Incomplete"
+    },
+    "body_part" : {
+      "id" : 38,
+      "name" : "Left Foot"
+    }
+  }
+},
+    {
+  "id" : "89300a03-5ea3-4962-96d2-ba8d613f0dae",
+  "index" : 3208,
+  "period" : 4,
+  "timestamp" : "00:13:42.563",
+  "minute" : 118,
+  "second" : 42,
+  "type" : {
+    "id" : 2,
+    "name" : "Ball Recovery"
+  },
+  "possession" : 242,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 6,
+    "name" : "From Counter"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3336,
+    "name" : "Harry Maguire"
+  },
+  "position" : {
+    "id" : 5,
+    "name" : "Left Center Back"
+  },
+  "location" : [ 51.0, 8.0 ]
+},
+    {
+  "id" : "d12476d5-363d-4779-89d7-22fe06c60610",
+  "index" : 3211,
+  "period" : 4,
+  "timestamp" : "00:13:46.563",
+  "minute" : 118,
+  "second" : 46,
+  "type" : {
+    "id" : 42,
+    "name" : "Ball Receipt*"
+  },
+  "possession" : 242,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 6,
+    "name" : "From Counter"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3244,
+    "name" : "John Stones"
+  },
+  "position" : {
+    "id" : 3,
+    "name" : "Right Center Back"
+  },
+  "location" : [ 51.0, 25.0 ],
+  "under_pressure" : true,
+  "related_events" : [ "9250ac90-549a-42a6-be8e-5efdb186d239", "aa258eb9-17c5-4745-b0ea-05e18de2e9ca" ]
+},
+    {
+  "id" : "3fe3b28b-70a3-4859-a4a8-a34afdc305a8",
+  "index" : 3218,
+  "period" : 4,
+  "timestamp" : "00:13:57.430",
+  "minute" : 118,
+  "second" : 57,
+  "type" : {
+    "id" : 42,
+    "name" : "Ball Receipt*"
+  },
+  "possession" : 242,
+  "possession_team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "play_pattern" : {
+    "id" : 6,
+    "name" : "From Counter"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3816,
+    "name" : "Jamie Vardy"
+  },
+  "position" : {
+    "id" : 24,
+    "name" : "Left Center Forward"
+  },
+  "location" : [ 96.0, 60.0 ],
+  "related_events" : [ "a4d50a69-99fd-437d-b5e9-7adb32282cc0" ]
+},
+    {
+  "id" : "59dfc811-3891-4316-a299-59cafe91a99d",
+  "index" : 1949,
+  "period" : 2,
+  "timestamp" : "00:28:10.693",
+  "minute" : 73,
+  "second" : 10,
+  "type" : {
+    "id" : 19,
+    "name" : "Substitution"
+  },
+  "possession" : 151,
+  "possession_team" : {
+    "id" : 785,
+    "name" : "Croatia"
+  },
+  "play_pattern" : {
+    "id" : 2,
+    "name" : "From Corner"
+  },
+  "off_camera" : false,
+  "team" : {
+    "id" : 768,
+    "name" : "England"
+  },
+  "player" : {
+    "id" : 3233,
+    "name" : "Raheem Sterling"
+  },
+  "position" : {
+    "id" : 24,
+    "name" : "Left Center Forward"
+  },
+  "substitution" : {
+    "outcome" : {
+      "id" : 103,
+      "name" : "Tactical"
+    },
+    "replacement" : {
+      "id" : 3318,
+      "name" : "Marcus Rashford"
+    }
+  }
+}
+]

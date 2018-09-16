@@ -4,6 +4,8 @@ __pycache__/
 
 # pytest
 .pytest_cache/
+.coverage
+htmlcov/
 
 # Jupyter notebooks
 notebooks/
