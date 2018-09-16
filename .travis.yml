@@ -1,0 +1,16 @@
+language: python
+
+python:
+  - "3.6.5"
+
+install:
+  - pip install -r requirements.txt
+  - pip install codecov pycodestyle pylint pytest pytest-cov
+
+script:
+  - python -m pycodestyle --max-line-length=119 statsbomb tests *.py
+  - python -m pylint --max-line-length=119 statsbomb tests *.py
+  - python -m pytest --cov=statsbomb --durations=5 tests/
+
+after_success:
+  - codecov

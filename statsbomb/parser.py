@@ -5,11 +5,17 @@ from statsbomb.utils import columns, get_event_name
 
 
 class Competitions(BaseParser):
+    """
+    Parses 'data/competitions.json' into tabular format.
+    """
     def get_dataframe(self) -> pd.DataFrame:
         return pd.DataFrame(self.data)
 
 
 class Matches(BaseParser):
+    """
+    Parses json data stored under 'data/matches/' into tabular format.
+    """
     def get_dataframe(self) -> pd.DataFrame:
 
         df = pd.DataFrame(self.data)
@@ -20,6 +26,9 @@ class Matches(BaseParser):
 
 
 class Lineups(BaseParser):
+    """
+    Parses json data stored under 'data/lineups/' into tabular format.
+    """
     def get_dataframe(self) -> pd.DataFrame:
 
         df = pd.DataFrame()
@@ -36,7 +45,7 @@ class Lineups(BaseParser):
 
 class Events(BaseParser):
     """
-    Parses json data into tabular format for a particular event.
+    Parses json data stored under 'data/events/' into tabular format for a particular event.
     """
 
     def get_dataframe(self, event_type: str) -> pd.DataFrame:
@@ -45,7 +54,7 @@ class Events(BaseParser):
 
         # get all events for a given event type
         all_events = [i for i in self.data if i['type']['name'] == event_type.title()]
-        assert len(all_events) > 0, 'Found 0 events for `{}`'.format(event_type)
+        assert all_events, 'Found 0 events for `{}`'.format(event_type)
 
         # get common attributes
         common_elements = [{key: event.get(key, None) for key in columns['common']} for event in all_events]
