@@ -10,7 +10,7 @@ install:
 script:
   - python -m pycodestyle --max-line-length=119 statsbomb tests *.py
   - python -m pylint statsbomb tests *.py
-  - python -m pytest --cov=statsbomb --durations=5 tests/
+  - python -m pytest --disable-pytest-warnings --cov=statsbomb --durations=5 tests/
 
 after_success:
   - codecov

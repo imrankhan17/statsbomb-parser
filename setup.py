@@ -12,7 +12,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name='statsbomb',
-    version='0.1.4',
+    version='0.1.5',
     author='Imran Khan',
     author_email='imrankhan17@hotmail.co.uk',
     description='A Python package to parse StatsBomb JSON data to CSV',

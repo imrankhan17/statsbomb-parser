@@ -7,7 +7,7 @@ class BaseParser:
     """
     def __init__(self, file_path: str):
         self.file_path = file_path
-        self.data = json.load(open(self.file_path))
+        self.data = json.load(open(self.file_path, encoding='utf-8'))
         self.id = self.file_path.split('/')[-1].split('.json')[0]
 
     def __repr__(self):
