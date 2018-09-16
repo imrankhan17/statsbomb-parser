@@ -17,3 +17,8 @@ notebooks/
 
 # Virtual environment
 env/
+
+# PyPI
+build/
+dist/
+statsbomb.egg-info/
