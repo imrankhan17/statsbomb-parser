@@ -97,3 +97,7 @@ class Events(BaseParser):
             df = df.drop('end_location', axis=1)
 
         return df
+
+    def save_data(self, event_type: str):
+        df = self.get_dataframe(event_type=event_type)
+        df.to_csv('{}_{}_{}.csv'.format(self.__class__.__name__.lower(), self.id, event_type), index=False)

@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 
 
 class BaseParser:
@@ -18,3 +19,10 @@ class BaseParser:
 
     def __len__(self):
         return len(self.data)
+
+    def get_dataframe(self, **kwargs) -> pd.DataFrame:
+        raise NotImplementedError
+
+    def save_data(self, **kwargs):
+        df = self.get_dataframe(**kwargs)
+        df.to_csv('{}_{}.csv'.format(self.__class__.__name__.lower(), self.id), index=False)

@@ -22,3 +22,6 @@ env/
 build/
 dist/
 statsbomb.egg-info/
+
+# data
+*.csv

@@ -12,12 +12,6 @@ Convert competitions/matches/lineups/events JSON data released by [StatsBomb](ht
 
 `$ pip install statsbomb`
 
-## Unit tests
-
-To run the unit tests for this package:
-
-`$ python -m pytest tests/`
-
 ## Example usage
 
  * Parsing the `competitions.json` file:
@@ -58,3 +52,12 @@ print(df)
 | shot       | d7a727de-1b60-47c7-b9fa-10948bb730ed | 634   | 1      | 00:23:34.907 | 23     | 34     | 45         | Croatia         | From Free Kick | False      | Croatia | Ivan Rakitić      | Left Center Midfield | 2.053    |                | 0.04375982   | 9cc48e31-5a52-4074-97b1-5c3eafdd753d | Left Foot | Open Play | Off T   | Volley      |            |                 |          |            |           |           | 108.0            | 29.0             | 120.0          | 46.9           | 6.1            |
 | shot       | 20bcdb94-9507-4bed-8315-edddcbb84081 | 736   | 1      | 00:27:53.880 | 27     | 53     | 53         | Croatia         | From Free Kick | False      | Croatia | Ivan Perišić      | Left Wing            | 0.587    |                | 0.12172278   | 90fdf286-3e32-4646-bcb1-a83a7d51593f | Left Foot | Open Play | Goal    | Half Volley |            | True            |          |            |           | True      | 105.0            | 32.0             | 120.0          | 43.3           | 0.7            |
 | ...        | ...                                  | ...   | ...    | ...          | ...    | ...    | ...        | ...             | ...            | ...        | ...     | ...               | ...                  | ...      |     ...        | ...          |  ...                                 | ...       | ...       | ...     | ...         |   ...      | ...             |   ...    | ...        | ...       |  ...      | ...              | ...              | ...            | ...            | ...            |
+
+* Save data to CSV:
+
+```python
+import statsbomb as sb
+
+events = sb.Events('../../open-data/data/events/8658.json')
+events.save_data(event_type='shot')  # outputs a file named events_8658_shot.csv
+```
