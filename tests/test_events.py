@@ -1,3 +1,5 @@
+from httmock import all_requests, HTTMock, response
+import json
 import os
 import pytest
 import statsbomb as sb
@@ -5,7 +7,16 @@ import statsbomb as sb
 
 @pytest.fixture(scope='module')
 def events_json():
-    return sb.Events(os.path.join(os.path.dirname(__file__), 'test_data', '8656.json'))
+
+    @all_requests
+    def github_mock(url, request):
+        content = json.load(open(os.path.join(os.path.dirname(__file__), 'test_data', '8656.json'), encoding='utf-8'))
+        return response(content=content, request=request)
+
+    with HTTMock(github_mock):
+        events = sb.Events(event_id='8656')
+
+    return events
 
 
 def test_class():

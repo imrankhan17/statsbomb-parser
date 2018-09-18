@@ -1,12 +1,22 @@
+from httmock import all_requests, HTTMock, response
+import json
 import os
 import statsbomb as sb
 
 
 def test_parser():
-    comps = sb.Competitions(os.path.join(os.path.dirname(__file__), 'test_data', 'competitions.json'))
 
-    assert str(comps) == 'Competitions data for ID: competitions'
-    assert comps.id == 'competitions'
+    @all_requests
+    def github_mock(url, request):
+        content = json.load(open(os.path.join(os.path.dirname(__file__), 'test_data', 'competitions.json'),
+                                 encoding='utf-8'))
+        return response(content=content, request=request)
+
+    with HTTMock(github_mock):
+        comps = sb.Competitions()
+
+    assert str(comps) == 'Competitions data for ID: None'
+    assert comps.id is None
     assert len(comps) == 3
     assert comps.get_dataframe().to_dict(orient='records') == [
         {'competition_id': 37, 'competition_name': "FA Women's Super League", 'country_name': 'England',

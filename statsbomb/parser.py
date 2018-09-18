@@ -1,13 +1,17 @@
 import pandas as pd
 
 from statsbomb.base import BaseParser
-from statsbomb.utils import columns, get_event_name
+from statsbomb.utils import BASE_URL, columns, get_event_name
 
 
 class Competitions(BaseParser):
     """
     Parses 'data/competitions.json' into tabular format.
     """
+
+    def _construct_url(self):
+        return '{}/{}.json'.format(BASE_URL, self.__class__.__name__.lower())
+
     def get_dataframe(self) -> pd.DataFrame:
         return pd.DataFrame(self.data)
 

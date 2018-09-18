@@ -1,9 +1,18 @@
+from httmock import all_requests, HTTMock, response
+import json
 import os
 import statsbomb as sb
 
 
 def test_parser():
-    lineup = sb.Lineups(os.path.join(os.path.dirname(__file__), 'test_data', '7457.json'))
+
+    @all_requests
+    def github_mock(url, request):
+        content = json.load(open(os.path.join(os.path.dirname(__file__), 'test_data', '7457.json'), encoding='utf-8'))
+        return response(content=content, request=request)
+
+    with HTTMock(github_mock):
+        lineup = sb.Lineups(event_id='7457')
 
     assert str(lineup) == 'Lineups data for ID: 7457'
     assert lineup.id == '7457'

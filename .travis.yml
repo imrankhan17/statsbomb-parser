@@ -5,7 +5,7 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - pip install codecov pycodestyle pylint pytest pytest-cov
+  - pip install codecov pycodestyle pylint pytest pytest-cov httmock
 
 script:
   - python -m pycodestyle --max-line-length=119 statsbomb tests *.py

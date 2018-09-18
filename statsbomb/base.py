@@ -1,15 +1,20 @@
-import json
+from json import JSONDecodeError
 import pandas as pd
+import requests
+
+from statsbomb.utils import BASE_URL
 
 
 class BaseParser:
     """
     Base class for parsers.
     """
-    def __init__(self, file_path: str):
-        self.file_path = file_path
-        self.data = json.load(open(self.file_path, encoding='utf-8'))
-        self.id = self.file_path.split('/')[-1].split('.json')[0]
+    def __init__(self, event_id: str = None):
+        self.id = event_id
+        try:
+            self.data = requests.get(self._construct_url()).json()
+        except JSONDecodeError:
+            raise Exception('No data found for {} ID: {}'.format(self.__class__.__name__.lower(), self.id))
 
     def __repr__(self):
         return '{} data for ID: {}'.format(self.__class__.__name__, self.id)
@@ -19,6 +24,9 @@ class BaseParser:
 
     def __len__(self):
         return len(self.data)
+
+    def _construct_url(self):
+        return '{}/{}/{}.json'.format(BASE_URL, self.__class__.__name__.lower(), self.id)
 
     def get_dataframe(self, **kwargs) -> pd.DataFrame:
         raise NotImplementedError
