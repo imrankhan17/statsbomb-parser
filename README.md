@@ -1,10 +1,10 @@
 # StatsBomb JSON parser
 
-[![PyPI version](https://badge.fury.io/py/statsbomb.svg)](https://pypi.org/project/statsbomb/) 
+[![PyPI version](https://badge.fury.io/py/statsbomb.svg)](https://pypi.org/project/statsbomb/)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/statsbomb.svg)
-[![Build Status](https://travis-ci.org/imrankhan17/statsbomb.svg?branch=master)](https://travis-ci.org/imrankhan17/statsbomb)
-[![codecov](https://codecov.io/gh/imrankhan17/statsbomb/branch/master/graph/badge.svg)](https://codecov.io/gh/imrankhan17/statsbomb)
-[![HitCount](http://hits.dwyl.io/imrankhan17/statsbomb.svg)](http://hits.dwyl.io/imrankhan17/statsbomb)  
+[![Build Status](https://travis-ci.org/imrankhan17/statsbomb-parser.svg?branch=master)](https://travis-ci.org/imrankhan17/statsbomb-parser)
+[![codecov](https://codecov.io/gh/imrankhan17/statsbomb-parser/branch/master/graph/badge.svg)](https://codecov.io/gh/imrankhan17/statsbomb-parser)
+[![HitCount](http://hits.dwyl.io/imrankhan17/statsbomb.svg)](http://hits.dwyl.io/imrankhan17/statsbomb)
 
 Convert competitions/matches/lineups/events JSON data released by [StatsBomb](https://github.com/statsbomb/open-data) into easy to use CSV format.
 
@@ -19,8 +19,7 @@ Convert competitions/matches/lineups/events JSON data released by [StatsBomb](ht
 ```python
 import statsbomb as sb
 
-# path to where the StatsBomb data is stored
-comps = sb.Competitions('../../open-data/data/competitions.json')
+comps = sb.Competitions()
 print(len(comps))  # 3
 
 df = comps.get_dataframe()
@@ -39,7 +38,7 @@ print(df)
 ```python
 import statsbomb as sb
 
-events = sb.Events('../../open-data/data/events/8658.json')
+events = sb.Events(event_id='8658')
 df = events.get_dataframe(event_type='shot')
 print(len(df))  # 23
 
@@ -58,6 +57,6 @@ print(df)
 ```python
 import statsbomb as sb
 
-events = sb.Events('../../open-data/data/events/8658.json')
+events = sb.Events(event_id='8658')
 events.save_data(event_type='shot')  # outputs a file named events_8658_shot.csv
 ```
