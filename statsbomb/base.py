@@ -42,7 +42,7 @@ class BaseParser:
             file_name = '{}_{}.csv'.format(self.__class__.__name__.lower(), self.id)
 
         if tmp:
-            file_path = os.path.join('tmp', file_name)
+            file_path = os.path.join(os.sep, 'tmp', file_name)
         else:
             file_path = file_name
 
