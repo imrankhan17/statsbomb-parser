@@ -12,7 +12,7 @@ class Competitions(BaseParser):
     def _construct_url(self):
         return '{}/{}.json'.format(BASE_URL, self.__class__.__name__.lower())
 
-    def get_dataframe(self) -> pd.DataFrame:
+    def get_dataframe(self, **kwargs) -> pd.DataFrame:
         return pd.DataFrame(self.data)
 
 
@@ -20,7 +20,7 @@ class Matches(BaseParser):
     """
     Parses json data stored under 'data/matches/' into tabular format.
     """
-    def get_dataframe(self) -> pd.DataFrame:
+    def get_dataframe(self, **kwargs) -> pd.DataFrame:
 
         df = pd.DataFrame(self.data)
         for col in columns['matches_name_cols']:
@@ -33,7 +33,7 @@ class Lineups(BaseParser):
     """
     Parses json data stored under 'data/lineups/' into tabular format.
     """
-    def get_dataframe(self) -> pd.DataFrame:
+    def get_dataframe(self, **kwargs) -> pd.DataFrame:
 
         df = pd.DataFrame()
         for team in self.data:
@@ -101,7 +101,3 @@ class Events(BaseParser):
             df = df.drop('end_location', axis=1)
 
         return df
-
-    def save_data(self, event_type: str):
-        df = self.get_dataframe(event_type=event_type)
-        df.to_csv('{}_{}_{}.csv'.format(self.__class__.__name__.lower(), self.id, event_type), index=False)

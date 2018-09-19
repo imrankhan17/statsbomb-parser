@@ -6,7 +6,7 @@
 [![codecov](https://codecov.io/gh/imrankhan17/statsbomb-parser/branch/master/graph/badge.svg)](https://codecov.io/gh/imrankhan17/statsbomb-parser)
 [![HitCount](http://hits.dwyl.io/imrankhan17/statsbomb.svg)](http://hits.dwyl.io/imrankhan17/statsbomb)
 
-Convert competitions/matches/lineups/events JSON data released by [StatsBomb](https://github.com/statsbomb/open-data) into easy to use CSV format.
+Convert competitions/matches/lineups/events JSON data released by [StatsBomb](https://github.com/statsbomb/open-data) into easy-to-use CSV format.
 
 ## Installation
 
@@ -21,6 +21,7 @@ import statsbomb as sb
 
 comps = sb.Competitions()
 print(len(comps))  # 3
+json_data = comps.data  # underlying json data
 
 df = comps.get_dataframe()
 print(df)

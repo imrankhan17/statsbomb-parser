@@ -1,4 +1,5 @@
 from json import JSONDecodeError
+import os
 import pandas as pd
 import requests
 
@@ -31,6 +32,18 @@ class BaseParser:
     def get_dataframe(self, **kwargs) -> pd.DataFrame:
         raise NotImplementedError
 
-    def save_data(self, **kwargs):
-        df = self.get_dataframe(**kwargs)
-        df.to_csv('{}_{}.csv'.format(self.__class__.__name__.lower(), self.id), index=False)
+    def save_data(self, event_type: str = None, tmp: bool = False, **kwargs):
+
+        df = self.get_dataframe(event_type=event_type)
+
+        if event_type:
+            file_name = '{}_{}_{}.csv'.format(self.__class__.__name__.lower(), self.id, event_type)
+        else:
+            file_name = '{}_{}.csv'.format(self.__class__.__name__.lower(), self.id)
+
+        if tmp:
+            file_path = os.path.join('tmp', file_name)
+        else:
+            file_path = file_name
+
+        df.to_csv(file_path, index=False)
