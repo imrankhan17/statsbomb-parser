@@ -32,7 +32,7 @@ class BaseParser:
     def get_dataframe(self, **kwargs) -> pd.DataFrame:
         raise NotImplementedError
 
-    def save_data(self, event_type: str = None, tmp: bool = False, **kwargs):
+    def save_data(self, event_type: str = None, tmp: bool = False):
 
         df = self.get_dataframe(event_type=event_type)
 
