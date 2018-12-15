@@ -19,22 +19,21 @@ def events_json():
     return events
 
 
-def test_class():
-    events = events_json()
-    assert str(events) == 'Events data for ID: 8656'
-    assert events.id == '8656'
-    assert len(events) == 16
+def test_class(events_json):
+    assert str(events_json) == 'Events data for ID: 8656'
+    assert events_json.id == '8656'
+    assert len(events_json) == 16
 
     with pytest.raises(AssertionError):
-        events.get_dataframe('fake_event')
+        events_json.get_dataframe('fake_event')
 
     with pytest.raises(AssertionError):
-        events.get_dataframe('block')
+        events_json.get_dataframe('block')
 
 
-def test_shots():
-    events = events_json()
-    assert events.get_dataframe('shot').to_dict(orient='records') == [
+def test_shots(events_json):
+
+    assert events_json.get_dataframe('shot').to_dict(orient='records') == [
         {'event_type': 'shot', 'id': '0160a53e-9ed5-48ff-adfe-be306d551b4a', 'index': 95, 'period': 1,
          'timestamp': '00:04:46.900', 'minute': 4, 'second': 46, 'possession': 10, 'possession_team': 'England',
          'play_pattern': 'From Free Kick', 'off_camera': False, 'team': 'England', 'player': 'Kieran Trippier',
@@ -62,9 +61,9 @@ def test_shots():
     ]
 
 
-def test_passes():
-    events = events_json()
-    assert events.get_dataframe('pass').to_dict(orient='records') == [
+def test_passes(events_json):
+
+    assert events_json.get_dataframe('pass').to_dict(orient='records') == [
         {'event_type': 'pass', 'id': '7e92f6b8-48e8-4616-9997-de689e48e4fd', 'index': 439, 'period': 1,
          'timestamp': '00:18:59.780', 'minute': 18, 'second': 59, 'possession': 38, 'possession_team': 'England',
          'play_pattern': 'From Throw In', 'off_camera': False, 'team': 'England', 'player': 'Ashley Young',
@@ -104,9 +103,9 @@ def test_passes():
     ]
 
 
-def test_ball_recovery():
-    events = events_json()
-    assert events.get_dataframe('ball recovery').to_dict(orient='records') == [
+def test_ball_recovery(events_json):
+
+    assert events_json.get_dataframe('ball recovery').to_dict(orient='records') == [
         {'event_type': 'ball recovery', 'id': '89300a03-5ea3-4962-96d2-ba8d613f0dae', 'index': 3208, 'period': 4,
          'timestamp': '00:13:42.563', 'minute': 118, 'second': 42, 'possession': 242, 'possession_team': 'England',
          'play_pattern': 'From Counter', 'off_camera': False, 'team': 'England', 'player': 'Harry Maguire',
@@ -115,9 +114,9 @@ def test_ball_recovery():
     ]
 
 
-def test_ball_receipt():
-    events = events_json()
-    assert events.get_dataframe('ball receipt*').to_dict(orient='records') == [
+def test_ball_receipt(events_json):
+
+    assert events_json.get_dataframe('ball receipt*').to_dict(orient='records') == [
         {'event_type': 'ball receipt*', 'id': 'd12476d5-363d-4779-89d7-22fe06c60610', 'index': 3211, 'period': 4,
          'timestamp': '00:13:46.563', 'minute': 118, 'second': 46, 'possession': 242, 'possession_team': 'England',
          'play_pattern': 'From Counter', 'off_camera': False, 'team': 'England', 'player': 'John Stones',
@@ -131,9 +130,9 @@ def test_ball_receipt():
     ]
 
 
-def test_substitution():
-    events = events_json()
-    assert events.get_dataframe('substitution').to_dict(orient='records') == [
+def test_substitution(events_json):
+
+    assert events_json.get_dataframe('substitution').to_dict(orient='records') == [
         {'event_type': 'substitution', 'id': '59dfc811-3891-4316-a299-59cafe91a99d', 'index': 1949, 'period': 2,
          'timestamp': '00:28:10.693', 'minute': 73, 'second': 10, 'possession': 151, 'possession_team': 'Croatia',
          'play_pattern': 'From Corner', 'off_camera': False, 'team': 'England', 'player': 'Raheem Sterling',
