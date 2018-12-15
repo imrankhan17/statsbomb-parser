@@ -8,7 +8,7 @@
 
 Convert competitions/matches/lineups/events JSON data released by [StatsBomb](https://github.com/statsbomb/open-data) into easy-to-use CSV format.
 
-A simple web interface for this package can be found [here](https://nepxjx0ad6.execute-api.eu-west-2.amazonaws.com/sb).
+A simple web interface for this package can be found [here](https://nr815jz59d.execute-api.eu-west-2.amazonaws.com/sb/).
 
 ## Installation
 
