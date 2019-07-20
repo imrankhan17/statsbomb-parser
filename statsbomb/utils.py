@@ -13,3 +13,6 @@ def get_event_name(dictionary: dict):
         return dictionary.get('name', None)
     except AttributeError:
         return None
+
+def get_all_event_names():
+    return columns['events']
