@@ -10,7 +10,7 @@ class Competitions(BaseParser):
     """
 
     def _construct_url(self):
-        return '{}/{}.json'.format(BASE_URL, self.__class__.__name__.lower())
+        return f'{BASE_URL}/{self.__class__.__name__.lower()}.json'
 
     def get_dataframe(self, **kwargs) -> pd.DataFrame:
         return pd.DataFrame(self.data)
@@ -54,11 +54,11 @@ class Events(BaseParser):
 
     def get_dataframe(self, event_type: str) -> pd.DataFrame:
 
-        assert event_type.title() in columns['events'], '`{}` is not a valid event type'.format(event_type)
+        assert event_type.title() in columns['events'], f'`{event_type}` is not a valid event type'
 
         # get all events for a given event type
         all_events = [i for i in self.data if i['type']['name'] == event_type.title()]
-        assert all_events, 'Found 0 events for `{}`'.format(event_type)
+        assert all_events, f'Found 0 events for `{event_type}`'
 
         # get common attributes
         common_elements = [{key: event.get(key, None) for key in columns['common']} for event in all_events]

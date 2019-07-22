@@ -35,6 +35,15 @@ print(df)
 | 43             | FIFA World Cup          | International            | 2018-09-08T07:33:39.356340 | 2018-09-08T14:30:04.356514 | 3         | 2018        |
 | 49             | NWSL                    | United States of America | 2018-09-08T07:33:39.356340 | 2018-09-08T07:33:39.356340 | 3         | 2018        |
 
+ * Parsing a matches json file:
+
+```python
+import statsbomb as sb
+
+matches = sb.Matches(event_id='11', season_id='37')
+df = matches.get_dataframe()
+print(len(df))  # 7
+```
 
  * Parsing an events json file to extract shots:
 
@@ -62,4 +71,31 @@ import statsbomb as sb
 
 events = sb.Events(event_id='8658')
 events.save_data(event_type='shot')  # outputs a file named events_8658_shot.csv
+```
+
+## Contributing
+
+Clone the repo:
+```bash
+git clone https://github.com/imrankhan17/statsbomb-parser.git
+cd statsbomb-parser
+```
+
+Create a virtual environment:
+```bash
+python -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+```
+
+Or use Docker:
+```bash
+docker build -t statsbomb-parser .
+```
+
+To run the CI pipeline locally, execute the commands in the `script` part of the `.travis.yml` files.  Or using Docker:
+```bash
+docker run -it --rm -v $(pwd):/home -w /home statsbomb-parser python -m pycodestyle --max-line-length=119 statsbomb tests *.py
+docker run -it --rm -v $(pwd):/home -w /home statsbomb-parser python -m pylint statsbomb tests *.py
+docker run -it --rm -v $(pwd):/home -w /home statsbomb-parser python -m pytest --disable-pytest-warnings --cov=statsbomb --cov-report=html --durations=5 tests/
 ```

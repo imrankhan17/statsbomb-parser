@@ -1,6 +1,6 @@
 [MASTER]
 
-jobs=4
+jobs=1
 
 # Add files or directories to the blacklist. They should be base names, not paths.
 ignore=setup.py
@@ -11,7 +11,7 @@ max-line-length=119
 
 [MESSAGES CONTROL]
 
-disable=missing-docstring,arguments-differ,wrong-import-order,unused-argument
+disable=missing-docstring,arguments-differ,wrong-import-order,unused-argument,duplicate-code
 
 good-names=id,df,columns
 

@@ -8,14 +8,15 @@ def test_parser():
 
     @all_requests
     def github_mock(url, request):
-        content = json.load(open(os.path.join(os.path.dirname(__file__), 'test_data', '49.json'), encoding='utf-8'))
+        content = json.load(open(os.path.join(os.path.dirname(__file__), 'test_data', '49', '3.json'),
+                                 encoding='utf-8'))
         return response(content=content, request=request)
 
     with HTTMock(github_mock):
-        matches = sb.Matches(event_id='49')
+        matches = sb.Matches(event_id='49', season_id='3')
 
-    assert str(matches) == 'Matches data for ID: 49'
-    assert matches.id == '49'
+    assert str(matches) == 'Matches data for ID: 49_3'
+    assert matches.id == '49_3'
     assert len(matches) == 12
     assert matches.get_dataframe().to_dict(orient='records') == [
         {'away_score': 1, 'away_team': 761, 'competition': 49, 'data_version': '1.0.2', 'home_score': 1,

@@ -1,3 +1,4 @@
+# pylint: disable=redefined-outer-name
 from httmock import all_requests, HTTMock, response
 import json
 import os
