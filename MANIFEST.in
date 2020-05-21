@@ -1,1 +1,2 @@
 include statsbomb/*.yaml
+include *.txt
